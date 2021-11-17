@@ -17,7 +17,7 @@ main{
 
 /* ----------SIDEBAR---------- */
 .sidebar{
-    width: 250px;
+    width: 180px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -26,19 +26,19 @@ main{
     
 /*------------MAIN-CONTENT-------*/
 .main-content{
-    width: calc(100% - 250px);
+    width: calc(100% - 180px);
     height: 100%;
     background-color: #7699da;
 }
 
 /* ----------NAV-TOP---------- */
 .navbar-top{
-    width: calc(100% - 250px);
+    width: calc(100% - 180px);
     height: 90px;
     position: fixed;
     top:0;
     right:0;
-    background-color: rgba(16, 15, 107, 0.829);
+    background-color:black;
     text-align: right;
     padding:25px 30px;
 }  
@@ -60,5 +60,24 @@ footer{
     background-color: #282828;
 }
   
-  
+/* -------MEDIA-QUERY--MOBILE-------- */
+@media screen and (max-width: 574px) {
+    
+.sidebar {
+        width: 50px;
+        transition: all 0.5s;
+}
+.navbar-top{
+        width: calc(100% - 50px);
+        transition: all 0.5s;
+}
+.navbar-top .btn{
+        transition: all 0.5s;
+        transform: scale(0.7);
+}
+    
+.main-content {
+        flex-grow: 1;
+   }
+}
 
