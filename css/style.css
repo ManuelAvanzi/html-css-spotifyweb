@@ -3,61 +3,99 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    color:gray;
+    font-family: 'Monstserrat', sans-serif;
+}
+/* -------UTILITY--------------- */
+.hide{
+    display: none;
+}
 
 .container-top{
-    height: calc(100vh - 150px);
+    height: calc(100vh - 70px);
     background-color: rgba(26, 107, 182, 0.719);
     display: flex;
 }
 /* ------------SIDEBAR---------- */
 .sidebar{
     height: 100%;
-    width: 250px;
     background-color: #000;
+    width: 200px;
+    color: #fff;
 }
 .sidebar-container-large, .sidebar-container-small{
     width: 100%;
     height: calc(100% - 100px);
-    border:3px solid green;
+    /* border:3px solid green; */
 }
 .sidebar-container-large-menu{
     width: 100%;
     height: 240px;
-    border:2px solid blue;
+    /* border:2px solid blue; */
 }
 .sidebar-container-large-playlist{
     width: 100%;
     height: calc(100% - 240px);
-    border:2px solid blue;
+    /* border:2px solid blue; */
 }
 .sidebar-container-small{
     height: 100px;
 }
+.sidebar-container-logo{
+    background-color: black;
+    padding-bottom: 0px;
+    padding-top: 12px;
+    width: 115px;
+    margin-left:18px;
 
+
+    
+}
 
 
 
 .main{
-    width: calc(100% - 250px);
+    width: calc(100% - 60px);
     height: 100%;
     max-height: 100%;
     overflow-y: scroll;
     background-color:#141922;
     padding-top: 150px;
 }
+header{
+    position: fixed;
+    top: 0;
+    width: calc(100% - 180px);
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .upgrade-bar{
     background-color:rgba(20,25,34,255);
-    height: 150px;
+    height: 60px;
     width: 100%;
     position: fixed;
     top:0;
-    border:1px solid white;
+    /* border:1px solid white; */
+}
+.upgrade{
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    padding: 9px 21px;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 
 /* ------------PLAYER-CONTROL---------- */
 .player-control{
-    height: 150px;
+    height: 60px;
     background-color: #282828;
     display: flex;
 }
@@ -93,8 +131,8 @@
 
 
 .box{
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 130px;
     background-color: greenyellow;
     margin:15px;
 }
