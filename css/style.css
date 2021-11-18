@@ -8,6 +8,20 @@ body{
     font-family: 'Monstserrat', sans-serif;
 }
 /* -------UTILITY--------------- */
+li{
+    list-style: none;
+    cursor: pointer;
+}
+li:hover{
+    color: white;
+}
+hr{
+ 
+}
+img{
+    cursor: pointer;
+}
+
 .hide{
     display: none;
 }
@@ -24,6 +38,17 @@ body{
     width: 200px;
     color: #fff;
 }
+  
+
+.sidebar-container-logo{
+    background-color: black;
+    padding-bottom: 0px;
+    padding-top: 12px;
+    width: 115px;
+    margin-left:18px;
+    /* border:1px solid yellowgreen */    
+}
+
 .sidebar-container-large, .sidebar-container-small{
     width: 100%;
     height: calc(100% - 100px);
@@ -31,27 +56,95 @@ body{
 }
 .sidebar-container-large-menu{
     width: 100%;
-    height: 240px;
+    height: 160px;
     /* border:2px solid blue; */
+}
+.sidebar-first-menu-container{
+    margin: 10px 0;
+    font-size: 10px;
+    color: #aaa;
+    /* border:1px solid red; */
+    padding-left: 20px;
+}
+.sidebar-first-menu-container li{
+    list-style: none;
+    font-size: 10px;
+    padding-top:10px;
+}
+.sidebar-first-menu-container img{
+    width: 22px;
+    vertical-align: middle;
+}
+.sidebar-first-menu-container img:hover{
+    color: white;
 }
 .sidebar-container-large-playlist{
     width: 100%;
     height: calc(100% - 240px);
     /* border:2px solid blue; */
 }
+
+/* -------------------playlist---------- */
+
+.playlist{
+    margin: 10px 0;
+    font-size: 10px;
+    color: #aaa;
+    padding-left: 20px;
+}
+.playlist-title{
+    margin-bottom:10px;
+}
+#plus{
+    margin-bottom: 20px;
+}
+.sidebar .playlist #plus::before {
+    content: "\f067";
+    color: #000;
+    background-color: #aaa;
+    padding: 6px 7px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+  }
+.playlist li {
+    margin: 10px 0;
+}
+
+/* ---------------sidebar-footer---- */
 .sidebar-container-small{
     height: 100px;
+    padding-top:50px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.sidebar-container-logo{
-    background-color: black;
-    padding-bottom: 0px;
-    padding-top: 12px;
-    width: 115px;
-    margin-left:18px;
-
-
-    
+.sidebar-container-small img{
+    width: 15px;
+    vertical-align: middle;
 }
+.sidebar-container-small .download {
+    font-size: 10px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.sidebar-box-2 hr {
+width: 1px solid gray;
+border:none;
+}
+  
+  .sidebar-container-small .profile {
+    margin-top: 5px;
+    font-size: 12px;
+}  
+  .sidebar-container-small .profile img{
+      border-radius: 50%;
+      background-color: grey;
+}
+.sidebar-container-small .download-logo {
+    width: 10px;
+}
+
 
 
 

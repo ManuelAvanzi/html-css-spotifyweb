@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
     
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
@@ -30,13 +32,56 @@
             <div class="sidebar-container-logo hide">
               <img src="img/logo-small.svg" alt="Logo mobile spotify">
             </div>
+
+            <!-- ---------------home-search-library------ -->
+            <div class="sidebar-first-menu-container">
+              <ul>
+                  <li>
+                      <img src="./img/home.svg" alt="home"><span>Home</span>
+                  </li>
+                  <li>
+                      <img src="./img/search.svg" alt="search"><span>Cerca</span>
+                  </li>
+                  <li>
+                      <img src="./img/libreria.svg" alt="library"><span>La tua libreria</span>
+                  </li>
+              </ul>
           </div>
-          <div class="sidebar-container-large-playlist"></div>
+          </div>
+
+          
+          <div class="sidebar-container-large-playlist">
+            <div class="playlist">
+              <h3 class="playlist-title">PLAYLIST</h3>
+              <h3 id="plus">Crea Playlist</h3>
+              <div class="overflow">
+                  <ul>
+                      <li>Nome Playlist</li>
+                      <li>Nome Playlist</li>
+                      <li>Nome Playlist</li>
+                      <li>Nome Playlist</li>
+                      <li>Nome Playlist</li>
+                      <li>Nome Playlist</li>
+                      <li>Nome Playlist</li>                                      
+                  </ul>
+              </div>
+          </div>
+          </div>
         </div>
 
-        <div class="sidebar-container-small"></div>
+        <div class="sidebar-container-small">
+
+         <div class="download">
+            <img class="download-logo" src="./img/download.svg" alt="download logo"><span>Installa App</span>
+         </div>
+         <hr>
+         <div class="profile">
+            <img class="profile-logo" src="./img/profile.svg" alt="logo profile"><span>John Doe</span>
+         </div>
+
+        </div>
       </div>
-      <div class="main">
+    <div class="main">
         
         <!-- ------------UPGRADE-BAR-------- -->
         <div class="upgrade-bar">
