@@ -30,6 +30,15 @@ a{
     background-color: rgba(26, 107, 182, 0.719);
     display: flex;
 }
+.main{
+    width: calc(100% - 60px);
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    background-color:#141922;
+    padding-top: 70px;
+}
+
 /* ------------SIDEBAR---------- */
 .sidebar{
     height: 100%;
@@ -156,14 +165,8 @@ border:none;
 
 
 
-.main{
-    width: calc(100% - 60px);
-    height: 100%;
-    max-height: 100%;
-    overflow-y: scroll;
-    background-color:#141922;
-    padding-top: 150px;
-}
+/* -------HEADER ------*/
+
 header{
     position: fixed;
     top: 0;
@@ -174,6 +177,7 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
+/* -----UPGRADE---------- */
 .upgrade-bar{
     background-color:rgba(20,25,34,255);
     height: 60px;
@@ -192,6 +196,29 @@ header{
     border-radius: 20px;
     cursor: pointer;
 }
+
+
+
+/* -------------MENU-BAR----------- */
+.menu-bar{
+    text-align: center;
+}
+.main .menu-bar li{
+    display: inline;
+    text-transform: uppercase;
+    padding:4px 10px;
+    margin:10px 0;
+    font-size: 10px;
+}
+.main .menu-bar a{
+    color:grey;
+    text-decoration: none;
+}
+.main .menu-bar li:hover{
+    border-bottom:2px solid limegreen;
+}
+
+
 
 
 
